@@ -1,0 +1,31 @@
+background #1f2430
+foreground #e6e9ef
+
+# Transparency
+background_opacity 0.92
+
+# Blur (Wayland)
+background_blur 8
+
+# Cursor
+cursor #f28fa5
+
+# Selection
+selection_background #f28fa5
+selection_foreground #1f2430
+
+# Window border
+window_border_width 2
+active_border_color #f28fa5
+inactive_border_color #c96a85
+
+# No rounded corners
+window_padding_width 8
+
+
+# BEGIN_KITTY_FONTS
+font_family      family='0xProto Nerd Font Mono' postscript_name=0xProtoNFM-Bold
+bold_font        true
+italic_font      false
+bold_italic_font false
+# END_KITTY_FONTS

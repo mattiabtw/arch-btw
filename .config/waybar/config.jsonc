@@ -1,0 +1,110 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 38, 
+    "spacing": 8, 
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+
+    ],
+    "modules-right": [
+        "network",
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "battery",
+        "clock",
+        "custom/notification",
+        "custom/sep",
+        "tray"
+    ],
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "seperate-outputs": false,
+         "show-special": false,
+         "format": "{name}",
+         "persistent-workspaces": {
+             "*": [ 1, 2, 3, 4, 5 ]
+    }
+},
+
+    "tray": {
+        "spacing": 8
+    },
+
+    "clock": {
+        "timezone": "Europe/Amsterdam",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%H:%M %d-%m-%Y} 󰃭"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "interval": "30"
+    },
+    "memory": {
+        "format": "{}% ",
+        "interval": "30"
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "Online {signalStrength}% ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "format-linked": "{ifname} (No IP) 󰊗",
+        "format-disconnected": "Offline ⚠",
+        "interval": "30",
+        "on-click": "foot -e nmtui"
+
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰅶 {icon} {format_source}",
+        "format-muted": "󰅶 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "custom/sep": {
+        "format": "|",
+        "interval": "0",
+        "tooltip": false
+    }
+}
