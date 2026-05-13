@@ -16,11 +16,3 @@ You can also use my dotfiles as a base for your dotfiles and later upload them t
 
 Dotfiles made by:
 Mattia, btw (Dario)
-  _       _
- / \     / \
-|   |   |   |
- \_/     \_/
-
- ____________
- \          /
-  \________/
