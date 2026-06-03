@@ -1,10 +1,14 @@
-Not everything here is included, i've left out some stuff that you need to manually install or you can just git clone from others.
-here is the list of everything that i didn't include:
+Everything here is mostly ready to use, i've included almost all my configs.
+here is the list of everything that's included:
 
-1. Alacritty: I got Alacritty from tony, the command to get the same Alacritty I use is "git clone https://github.com/tonybanters/alacritty"
-2. Ranger: I use the defaults for Ranger as i find them pretty sane, to install Ranger (on Arch example) it would be "sudo pacman -S ranger"
-3. Fastfetch: I did not include fastfetch here since the alias that i use (neofetch) is just an alias for "fastfetch -c examples/13"
-4. Waypaper: you can get it off of the AUR
+1. Hyprland: My main WM config with some custom scripts for screenshots and more.
+2. Waybar: A polished top bar with custom modules.
+3. Foot & Alacritty: My terminal configurations.
+4. Mako & SwayNC: Notification daemons (switched to Mako recently).
+5. Fastfetch: Custom fastfetch config.
+6. Waypaper: Wallpaper management config.
+7. Rofi/Wofi/Fuzzel: App launchers and menus.
+8. Starship: Cross-shell prompt.
 
 Colorscheme: Catppuccin Mocha
 WM: Hyprland (I am thinking about making more dotfiles for other WMs and possibly DEs)

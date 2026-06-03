@@ -1,0 +1,29 @@
+{
+  "logo": {
+    "padding": { "top": 2, "left": 4 }
+  },
+  "display": {
+    "separator": "  "
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    {
+  "type": "command",
+  "key": "OS Age",
+  "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days",
+  "keyColor": "cyan"
+},
+    "packages",
+    "shell",
+    "wm",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "break",
+  ]
+}
