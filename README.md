@@ -8,7 +8,6 @@ here is the list of everything that's included:
 5. Fastfetch: Custom fastfetch config. I use "fastfetch -c examples/13" and add an alias for it in .bashrc called "neofetch"
 6. Fuzzel: App launcher and menus.
 7. wlogout: Logout menu.
-8. Kitty: Minimal kitty config.
 
 **The files ending in ".bak" are with a catppuccin theme for you catppuccin lovers!**
 
