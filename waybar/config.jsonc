@@ -1,0 +1,123 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 30, 
+    "spacing": 8, 
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/sep",
+        "hyprland/window",
+        "custom/sep"
+    ],
+    "modules-center": [
+
+    ],
+    "modules-right": [
+        "custom/sep",
+        "network",
+        "custom/sep",
+        "cpu",
+        "custom/sep",
+        "memory",
+        "custom/sep",
+        //"custom/kernel",
+        //"custom/sep",
+        "pulseaudio",
+        "custom/sep",
+        "disk",
+        "custom/sep",
+        "battery",
+        "custom/sep",
+        "clock",
+        "custom/sep",
+        "tray"
+    ],
+
+    "custom/kernel": {
+        "format": " {}",
+        "interval": 0,
+        "tooltip": false,
+        "exec": "uname -r"
+    },
+
+    "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "seperate-outputs": false,
+         "show-special": false,
+         "format": "{name}",
+         "persistent-workspaces": {
+             "*": [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+    }
+},
+
+    "hyprland/window": {
+        "max-length": 40,
+        "seperate-outputs": false
+    },
+
+    "tray": {
+        "spacing": 4
+    },
+
+    "clock": {
+        "timezone": "Europe/Amsterdam",
+        "format": "{:%H:%M}",
+        "format-alt": "󰃭 {:%A, %d %H:%M}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        //"format": "{usage}% ",
+        "format": "CPU: {usage}%",
+        "tooltip": true,
+        "interval": "30"
+    },
+    "memory": {
+        //"format": "{}% ",
+        "format": "Mem: {used}GiB",
+        "tooltip": true,
+        "interval": "30"
+    },
+
+    "battery": {
+        //"format": "{capacity}% {icon}",
+        "format": "Bat: {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "disk": {
+        "format": "Disk: {free}",
+        "interval": 30,
+        "path": "/"
+    },
+
+    "network": {
+        //"format-wifi": "Online {signalStrength}%",
+        "format-wifi": "Online",
+        "format-disconnected": "Offline",
+        "tooltip": false,
+        "interval": "30"
+    },
+
+    "pulseaudio": {
+        //"format": "{volume}% {icon} {format_source}",
+        //"format": "Vol: {volume}% {format_source}",
+        "format": "Vol: {volume}%",
+        "tooltip": true,
+        "format-muted": "Muted",
+        "format-source": "Mic: {volume}%",
+        "format-source-muted": "Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "custom/sep": {
+        "format": "|",
+        "interval": "0",
+        "tooltip": false
+    }
+}

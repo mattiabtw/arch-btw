@@ -1,0 +1,3 @@
+#!/bin/bash
+
+"$(printf "Super + Return = Open Terminal\n Super + C = close window\n Super + F = Fullscreen\n Super + T = Screenshot of Region\n Super + Y = Screenshot of screen\n Super + E = Open FM\n Super + Shift +Q = exit\n Super + V = floating\n Super + D = menu\n Super + Z = waypaper\n Super + Shift + D = cliphist\n Super + Shift + T = SwayNC\n Super + Shift + Return = 2nd term\n Super + Shift + E = Ranger\n Super + Shift + W = cliphist wipe\n Super + R = reload waybar\n Super + G = toggle gaps\n Super + L = wlogout" | fuzzel --dmenu --prompt "Keybinds: " --lines 18 --width 40)" 
